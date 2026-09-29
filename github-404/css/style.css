@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  background-color: #f1f1f1;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.decor {
+  height: 370px;
+  overflow: hidden;
+  background-image: url("../images/fond.jpg");
+  background-size: 110% 430px;
+  background-position: -20px -20px;
+}
+
+.scene {
+  position: relative;
+  width: 940px;
+  height: 370px;
+  margin: 0 auto;
+}
+
+.scene img {
+  position: absolute;
+  height: auto;
+}
+
+.octocat {
+  top: 90px;
+  left: 350px;
+}
+
+.vaisseau {
+  top: 150px;
+  left: 430px;
+}
+
+.ombre-octocat {
+  top: 290px;
+  left: 370px;
+}
+
+.ombre-vaisseau {
+  top: 260px;
+  left: 440px;
+}
+
+.maison-1 {
+  top: 70px;
+  left: 470px;
+}
+
+.maison-2 {
+  top: 110px;
+  left: 760px;
+}
+
+.titre {
+  position: absolute;
+  top: 60px;
+  left: 70px;
+  width: 260px;
+  margin: 0;
+  color: #fff;
+  font-family: "Bree Serif", serif;
+  font-size: 120px;
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+  text-shadow: 0 0 2px #555, 3px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.bulle {
+  position: absolute;
+  top: 170px;
+  left: 70px;
+  width: 200px;
+  min-height: 100px;
+  margin: 0;
+  padding: 20px 30px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #2f5a76;
+  font-family: "Bree Serif", serif;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.bulle::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 100%;
+  border: 12px solid transparent;
+  border-left-color: #fff;
+}
+
+.contenu {
+  width: 800px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.recherche label {
+  display: block;
+  padding: 5px 0;
+  font-weight: 200;
+  text-align: left;
+}
+
+.recherche input {
+  width: 700px;
+  padding: 7px 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.bouton {
+  width: 90px;
+  padding: 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  color: #333;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.bouton:hover {
+  background-image: linear-gradient(#eee, #ddd);
+}
+
+.recherche input:focus,
+.bouton:focus {
+  border-color: #51a7e8;
+  outline: none;
+  box-shadow: 0 0 5px rgba(81, 167, 232, 0.5);
+}
+
+.erreur {
+  margin: 5px 0 0;
+  color: red;
+  text-align: left;
+}
+
+.liens {
+  margin: 40px 0 0;
+  color: #ccc;
+}
+
+.liens a {
+  margin: 0 10px;
+  color: #666;
+  font-size: 14px;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+.liens a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  display: inline-block;
+  margin-top: 40px;
+}
