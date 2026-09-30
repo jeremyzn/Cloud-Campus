@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
+  <circle cx="30" cy="30" r="24" fill="#2e8b57"/>
+  <path d="M14 26c6-6 12-2 16-6s10-4 14 2M12 36c8 2 14-4 20 0s10 4 16-2" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <text x="62" y="38" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1f3b2d">EventEarth</text>
+</svg>
