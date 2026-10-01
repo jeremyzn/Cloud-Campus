@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelier Grid vs Flexbox</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Section 1 : Navigation principale -->
+      <section class="section-navbar">
+        <h2 class="titre-section">Navigation principale</h2>
+
+        <nav class="menu">
+          <div class="menu-gauche">
+            <a href="#" class="logo image">TechPro</a>
+            <ul class="liens">
+              <li><a href="#" class="actif">Accueil</a></li>
+              <li><a href="#">Produits</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="menu-droite">
+            <a href="#" class="connexion">Se connecter</a>
+            <a href="#" class="bouton">S'inscrire</a>
+          </div>
+
+          <button class="burger">☰</button>
+        </nav>
+
+        <p class="justification">
+          <span>Justification :</span> J'ai utilisé Flexbox car la navigation
+          est sur une seule ligne. Avec justify-content: space-between, le logo
+          et les liens vont à gauche et les boutons à droite.
+        </p>
+      </section>
+
+      <!-- Section 2 : Nos formations populaires -->
+      <section class="section-formations">
+        <h2 class="titre-section">Nos formations populaires</h2>
+
+        <div class="grille-formations">
+          <div class="carte">
+            <div class="carte-image image">JavaScript</div>
+            <div class="infos">
+              <span class="etiquette">Développement</span>
+              <span>12h de cours</span>
+            </div>
+            <h3 class="carte-titre">JavaScript Moderne</h3>
+            <p>Maîtrisez ES6+, async/await et les frameworks modernes</p>
+            <div class="carte-bas">
+              <span class="prix">299 €</span>
+              <a href="#" class="bouton petit">S'inscrire</a>
+            </div>
+          </div>
+
+          <div class="carte">
+            <div class="carte-image image">React</div>
+            <div class="infos">
+              <span class="etiquette">Framework</span>
+              <span>15h de cours</span>
+            </div>
+            <h3 class="carte-titre">React Avancé</h3>
+            <p>Créez des applications web performantes avec React</p>
+            <div class="carte-bas">
+              <span class="prix">399 €</span>
+              <a href="#" class="bouton petit">S'inscrire</a>
+            </div>
+          </div>
+
+          <div class="carte cache-mobile">
+            <div class="carte-image image">Node.js</div>
+            <div class="infos">
+              <span class="etiquette">Backend</span>
+              <span>18h de cours</span>
+            </div>
+            <h3 class="carte-titre">Node.js &amp; Express</h3>
+            <p>Développez des API REST et applications serveur</p>
+            <div class="carte-bas">
+              <span class="prix">449 €</span>
+              <a href="#" class="bouton petit">S'inscrire</a>
+            </div>
+          </div>
+        </div>
+
+        <p class="justification">
+          <span>Justification :</span> J'ai utilisé Grid car les 3 cartes
+          forment des colonnes de même largeur. En mobile, il suffit de passer à
+          1 colonne. Dans chaque carte, j'ai utilisé Flexbox pour aligner les
+          éléments.
+        </p>
+      </section>
+
+      <section class="section-article">
+        <h2 class="titre-section">Article à la une</h2>
+
+        <div class="article">
+          <div class="article-image image">Intelligence Artificielle</div>
+
+          <div class="article-contenu">
+            <div class="infos">
+              <span class="etiquette">Technologies</span>
+              <span>10 min de lecture</span>
+            </div>
+            <h3 class="article-titre">
+              L'Impact de l'IA sur le Développement Web en 2024
+            </h3>
+            <p class="article-texte">
+              L'intelligence artificielle révolutionne la façon dont nous
+              concevons et développons des applications web. Découvrez les
+              dernières innovations et leur impact sur l'industrie du
+              développement...
+            </p>
+            <div class="auteur">
+              <span class="avatar">ML</span>
+              <div>
+                <p class="auteur-nom">Marie Laurent</p>
+                <p>Lead Developer @ TechPro</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="justification">
+          <span>Justification :</span> J'ai utilisé Flexbox car il y a
+          seulement deux blocs côte à côte : l'image et le texte. En mobile, je
+          mets flex-direction: column pour mettre l'image au-dessus.
+        </p>
+      </section>
+
+      <section class="section-technologies">
+        <h2 class="titre-section">Technologies maîtrisées</h2>
+
+        <ul class="technos">
+          <li>React.js</li>
+          <li>Vue.js</li>
+          <li>Node.js</li>
+          <li>TypeScript</li>
+          <li>Python</li>
+          <li class="cache-mobile">Docker</li>
+          <li class="cache-mobile">AWS</li>
+        </ul>
+
+        <p class="justification">
+          <span>Justification :</span> J'ai utilisé Flexbox car les étiquettes
+          n'ont pas toutes la même largeur. Avec flex-wrap: wrap, elles passent
+          à la ligne quand il n'y a plus de place.
+        </p>
+      </section>
+
+      <section class="section-projets">
+        <h2 class="titre-section">Nos projets réalisés</h2>
+
+        <div class="grille-projets">
+          <div class="projet image">Inspiration<br />Visuelle</div>
+          <div class="projet image">Grille<br />Créative</div>
+          <div class="projet image">Moodboard<br />Produits</div>
+          <div class="projet image">Univers en<br />images</div>
+          <div class="projet grand image">Collection en un<br />coup d'œil</div>
+        </div>
+
+        <p class="justification">
+          <span>Justification :</span> J'ai utilisé Grid car il y a des lignes
+          et des colonnes (3 colonnes et 2 lignes), et le dernier projet prend 2
+          colonnes avec grid-column: span 2.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
